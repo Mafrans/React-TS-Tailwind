@@ -10,7 +10,7 @@
     "build": "node build.js",
     "build:watch": "nodemon --watch src --ext ts,tsx,html,css,js --exec \"npm run build\"",
     "dev:tailwind": "npx tailwindcss -o ./dist/tailwind.css --watch",
-    "dev:serve": "live-server --entry-file=./dist/index.html --spa --watch=./dist"
+    "dev:serve": "live-server --wait=400 --no-css-inject --mount=/:./dist --entry-file=./dist/index.html --watch=./dist"
   },
   "dependencies": {
     "@fontsource/inter": "^4.5.0",
